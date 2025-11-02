@@ -1,5 +1,5 @@
 {
-  "name": "HAOS Kiosk Add-on Repository",
-  "url": "https://github.com/puterboy/HAOS-kiosk",
-  "maintainer": "Jeff Kosowsky"
+  "name": "HAOS Kiosk VLC Add-on Repository",
+  "url": "https://github.com/mprior/HAOS-kiosk-vlc",
+  "maintainer": "Jeff Kosowsky et al"
 }
