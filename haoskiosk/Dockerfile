@@ -1,9 +1,9 @@
 ################################################################################
 # Add-on: HAOS Kiosk Display (haoskiosk)
 # File: Dockerfile
-# Version: 1.1.1
+# Version: 1.1.2
 # Copyright Jeff Kosowsky
-# Date: September 2025
+# Date: 02 11 2025
 ################################################################################
 
 ARG BUILD_FROM
