@@ -55,13 +55,13 @@ devices:
 
 map:
   - addon_config:rw
-  - type: bind
-    source: /tmp/.X11-unix
-    target: /tmp/.X11-unix
-    read_only: false
+  #- type: bind
+  #  source: /tmp/.X11-unix
+  #  target: /tmp/.X11-unix
+  #  read_only: false
     
-#volumes:    
-#  - /path/on/host:/path/in/container:bind  
+volumes:    
+  - /tmp/.X11-unix:/tmp/.X11-unix:bind  
 
 privileged:
   - SYS_ADMIN
