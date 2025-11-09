@@ -11,7 +11,7 @@ arch:
   - amd64
   - armhf
   - armv7
-  - i386#
+  - i386
 
 audio: true
 startup: application
