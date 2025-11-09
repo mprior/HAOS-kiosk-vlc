@@ -1,6 +1,7 @@
-# HAOS-kiosk
+# HAOS-kiosk-vlc
 
 Display HA dashboards in kiosk mode directly on your HAOS server.
+Also play audi / video with VLC
 
 ## Author: Jeff Kosowsky
 
