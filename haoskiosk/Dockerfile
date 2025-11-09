@@ -44,7 +44,8 @@ RUN apk update && apk add --no-cache \
     vlc \
     && apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/v3.21/community luakit=2.3.6-r0 \
     && rm -rf /var/cache/apk/*
-
+    
+RUN sed -i 's/geteuid/getppid/' /usr/bin/vlc   # mod VLC to allow run as root
 # Set the display variable
 ENV DISPLAY=:0
 
