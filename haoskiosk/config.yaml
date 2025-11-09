@@ -55,10 +55,6 @@ devices:
 
 map:
   - addon_config:rw
-  - type: share
-    source: /tmp/.X11-unix
-    target: /tmp/.X11-unix
-    read_only: false
 
 privileged:
   - SYS_ADMIN
