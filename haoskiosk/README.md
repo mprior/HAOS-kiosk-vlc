@@ -1,8 +1,9 @@
 # HAOS-kiosk
 
 Display HA dashboards in kiosk mode directly on your HAOS server.
+Also can play audio / video from VLC 
 
-## Author: Jeff Kosowsky
+## Author: Jeff Kosowsky et al
 
 ## Description
 
