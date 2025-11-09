@@ -59,6 +59,9 @@ map:
     source: /tmp/.X11-unix
     target: /tmp/.X11-unix
     read_only: false
+    
+#volumes:    
+#  - /path/on/host:/path/in/container:bind  
 
 privileged:
   - SYS_ADMIN
