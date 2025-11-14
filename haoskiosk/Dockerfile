@@ -41,11 +41,16 @@ RUN apk update && apk add --no-cache \
     python3-tkinter \
     patch \
     bash \
+    inotify-tools \
+    nginx \
+    pwgen \
     vlc \
+    && sed -i 's/geteuid/getppid/' /usr/bin/vlc \
+    && sed -i '197s#.*#    dir = dir == undefined ? "file:///media" : dir;#' /usr/share/vlc/lua/http/js/controllers.js
     && apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/v3.21/community luakit=2.3.6-r0 \
     && rm -rf /var/cache/apk/*
     
-RUN sed -i 's/geteuid/getppid/' /usr/bin/vlc   # mod VLC to allow run as root
+#RUN sed -i 's/geteuid/getppid/' /usr/bin/vlc   # mod VLC to allow run as root
 # Set the display variable
 ENV DISPLAY=:0
 
@@ -63,5 +68,8 @@ RUN pip install --no-cache-dir  --break-system-packages aiohttp #Required for re
 # Need to patch 'unique_instance.lua' so that new instance urls overwrite active url rather than add new tab
 COPY unique_instance.patch /usr/share/luakit/lib
 RUN patch -p2 /usr/share/luakit/lib/unique_instance.lua < /usr/share/luakit/lib/unique_instance.patch
+
+WORKDIR /
+COPY rootfs /
 
 CMD ["/run.sh"]
