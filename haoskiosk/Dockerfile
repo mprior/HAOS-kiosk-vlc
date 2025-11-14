@@ -46,7 +46,7 @@ RUN apk update && apk add --no-cache \
     pwgen \
     vlc \
     && sed -i 's/geteuid/getppid/' /usr/bin/vlc \
-    && sed -i '197s#.*#    dir = dir == undefined ? "file:///media" : dir;#' /usr/share/vlc/lua/http/js/controllers.js
+    && sed -i '197s#.*#    dir = dir == undefined ? "file:///media" : dir;#' /usr/share/vlc/lua/http/js/controllers.js \
     && apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/v3.21/community luakit=2.3.6-r0 \
     && rm -rf /var/cache/apk/*
     
