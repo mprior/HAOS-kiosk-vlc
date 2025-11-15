@@ -70,7 +70,7 @@ privileged:
   - SYS_ADMIN
 
 options:
-  ha_url: "http://localhost:8123"
+  ha_url: "http://172.30.32.1:8123"
   ha_dashboard: ""
   login_delay: 1.0
   zoom_level: 100
