@@ -3,7 +3,7 @@ name: "HAOS Kiosk Display + VLC"
 description: |
   Start X server and browser on local HAOS server and display dashboards in
   kiosk mode (Jeff Kosowsky)
-version: "1.1.6"
+version: "1.1.7"
 slug: "haoskiosk"
 
 arch:
@@ -17,7 +17,6 @@ audio: true
 discovery:
   - vlc_telnet
 startup: application
-host_network: true
 init: false
 ingress: true
 homeassistant_api: true
