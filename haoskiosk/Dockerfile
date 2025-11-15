@@ -71,5 +71,7 @@ RUN patch -p2 /usr/share/luakit/lib/unique_instance.lua < /usr/share/luakit/lib/
 
 WORKDIR /
 COPY rootfs /
+RUN chmod a+x /etc/cont-init.d/ingress.sh
+RUN chmod a+x /etc/cont-init.d/secret.sh
 
 CMD ["/run.sh"]
