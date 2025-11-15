@@ -10,7 +10,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Install Luakit and necessary dependencies
-RUN apk update && apk add --no-cache \
+RUN set -x && apk update && apk add --no-cache \
     xorg-server \
     xf86-video-modesetting \
     xf86-input-libinput \
