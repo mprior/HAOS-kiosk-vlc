@@ -89,7 +89,7 @@ options:
   xorg_conf: ""
   xorg_append_replace: "append"
   allow_user_commands: false
-  rest_port: 8080
+  rest_port: 8081
   rest_bearer_token: ""
   debug_mode: false
 
