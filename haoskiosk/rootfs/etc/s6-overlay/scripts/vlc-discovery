@@ -9,7 +9,7 @@ declare ha_config
 # Prepare discovery payload
 ha_config=$(\
     bashio::var.json \
-        host "172.30.33.3" \
+        host "$(hostname)" \
         port "^4212" \
         password "$(cat /data/secret)" \
 )
