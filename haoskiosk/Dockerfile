@@ -73,5 +73,6 @@ WORKDIR /
 COPY rootfs /
 RUN chmod a+x /etc/cont-init.d/ingress.sh
 RUN chmod a+x /etc/cont-init.d/secret.sh
+RUN chmod a+x /etc/s6-overlay/scripts/vlc-discovery
 
 CMD ["/run.sh"]
