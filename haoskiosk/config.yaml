@@ -16,8 +16,8 @@ arch:
 audio: true
 #host_network: true
 ports:
-  - 4212:4212
-  - 8081:8081
+  - "4212:4212"
+  - "8081:8081"
 discovery:
   - vlc_telnet
 startup: application
